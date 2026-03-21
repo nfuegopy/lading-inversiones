@@ -18,12 +18,11 @@ class ContactController extends Controller
 
         try {
             Mail::to('admin@acbldeveloper.com')
-                ->cc('acbleguizamon@gmail.com') // <--- Pon aquí el correo de copia
+                ->cc('acbleguizamon@gmail.com')
                 ->send(new ContactoMail($validado));
 
             return back()->with('success', 'Mensaje enviado.');
         } catch (\Exception $e) {
-            // Esto te ayudará a ver errores de SMTP en el log si fallan las credenciales
             \Log::error("Error de correo: " . $e->getMessage());
             return back()->withErrors(['error' => 'Error al enviar.']);
         }
