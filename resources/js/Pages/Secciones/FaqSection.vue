@@ -17,17 +17,18 @@
                 <div class="lg:col-span-4 lg:sticky lg:top-32">
                     <span
                         class="text-[#c2a878] font-bold tracking-widest uppercase text-xs"
-                        >FAQ</span
+                        >{{ $t("faq.badge") }}</span
                     >
                     <h2
                         class="text-4xl md:text-5xl font-bold mt-4 text-white leading-tight"
                     >
-                        Consultas <br />
-                        <span class="text-[#c2a878]">Frecuentes</span>
+                        {{ $t("faq.title1") }} <br />
+                        <span class="text-[#c2a878]">{{
+                            $t("faq.title2")
+                        }}</span>
                     </h2>
                     <p class="text-gray-400 mt-6 text-lg leading-relaxed">
-                        Despejamos tus dudas sobre el ecosistema legal y fiscal
-                        paraguayo.
+                        {{ $t("faq.desc") }}
                     </p>
                     <div class="mt-8 hidden lg:block">
                         <div class="h-1 w-20 bg-[#c2a878]"></div>
@@ -43,22 +44,17 @@
                                         class="text-[#c2a878] font-mono text-sm"
                                         >01.</span
                                     >
-                                    <span class="font-bold text-white text-lg"
-                                        >Ventajas Fiscales</span
+                                    <span
+                                        class="font-bold text-white text-lg"
+                                        >{{ $t("faq.q1") }}</span
                                     >
                                 </div>
                             </AccordionHeader>
                             <AccordionContent>
                                 <div
                                     class="pt-2 text-gray-300 leading-relaxed border-t border-white/10 mt-4"
-                                >
-                                    Paraguay opera bajo el sistema del
-                                    <strong>10-10-10</strong> (IVA, Renta
-                                    Personal y Empresarial). Es uno de los
-                                    esquemas más sencillos y económicos de la
-                                    región, ideal para maximizar el retorno de
-                                    tu capital.
-                                </div>
+                                    v-html="$t('faq.a1')"
+                                ></div>
                             </AccordionContent>
                         </AccordionPanel>
 
@@ -69,21 +65,17 @@
                                         class="text-[#c2a878] font-mono text-sm"
                                         >02.</span
                                     >
-                                    <span class="font-bold text-white text-lg"
-                                        >Constitución de Sociedades</span
+                                    <span
+                                        class="font-bold text-white text-lg"
+                                        >{{ $t("faq.q2") }}</span
                                     >
                                 </div>
                             </AccordionHeader>
                             <AccordionContent>
                                 <div
                                     class="pt-2 text-gray-300 leading-relaxed border-t border-white/10 mt-4"
-                                >
-                                    No necesitas ser residente para ser
-                                    accionista. Podemos gestionar la apertura de
-                                    tu SA o SRL de forma remota en gran parte
-                                    del proceso, obteniendo tu RUC para operar
-                                    legalmente.
-                                </div>
+                                    v-html="$t('faq.a2')"
+                                ></div>
                             </AccordionContent>
                         </AccordionPanel>
 
@@ -94,20 +86,17 @@
                                         class="text-[#c2a878] font-mono text-sm"
                                         >03.</span
                                     >
-                                    <span class="font-bold text-white text-lg"
-                                        >Residencia Legal</span
+                                    <span
+                                        class="font-bold text-white text-lg"
+                                        >{{ $t("faq.q3") }}</span
                                     >
                                 </div>
                             </AccordionHeader>
                             <AccordionContent>
                                 <div
                                     class="pt-2 text-gray-300 leading-relaxed border-t border-white/10 mt-4"
-                                >
-                                    Tramitamos tu radicación y cédula paraguaya.
-                                    Es un paso fundamental si buscas optimizar
-                                    tu fiscalidad a nivel global y establecerte
-                                    físicamente en el país.
-                                </div>
+                                    v-html="$t('faq.a3')"
+                                ></div>
                             </AccordionContent>
                         </AccordionPanel>
 
@@ -118,22 +107,17 @@
                                         class="text-[#c2a878] font-mono text-sm"
                                         >04.</span
                                     >
-                                    <span class="font-bold text-white text-lg"
-                                        >Seguridad en Propiedades</span
+                                    <span
+                                        class="font-bold text-white text-lg"
+                                        >{{ $t("faq.q4") }}</span
                                     >
                                 </div>
                             </AccordionHeader>
                             <AccordionContent>
                                 <div
                                     class="pt-2 text-gray-300 leading-relaxed border-t border-white/10 mt-4"
-                                >
-                                    Realizamos
-                                    <em>due diligence</em> exhaustiva.
-                                    Verificamos certificados de libertad de
-                                    gravamen y condiciones de dominio para que
-                                    tu inversión inmobiliaria sea sólida y sin
-                                    vicios legales.
-                                </div>
+                                    v-html="$t('faq.a4')"
+                                ></div>
                             </AccordionContent>
                         </AccordionPanel>
                     </Accordion>

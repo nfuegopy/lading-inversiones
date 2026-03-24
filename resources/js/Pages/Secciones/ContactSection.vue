@@ -6,16 +6,14 @@
             <div>
                 <span
                     class="text-[#c2a878] font-bold tracking-widest uppercase text-sm"
-                    >Hablemos</span
+                    >{{ $t("contact.badge") }}</span
                 >
                 <h2 class="text-4xl font-bold mt-2 mb-8">
-                    Comienza tu proyecto hoy
+                    {{ $t("contact.title") }}
                 </h2>
 
                 <p class="text-gray-400 mb-10 leading-relaxed">
-                    Completa el formulario y nuestro equipo se pondrá en
-                    contacto contigo a la mayor brevedad posible para analizar
-                    tu caso y ofrecerte la mejor estrategia.
+                    {{ $t("contact.desc") }}
                 </p>
 
                 <div class="space-y-6 text-gray-300">
@@ -24,7 +22,9 @@
                             class="pi pi-map-marker text-[#c2a878] text-xl mr-4 mt-1"
                         ></i>
                         <div>
-                            <h4 class="font-bold text-white mb-1">Dirección</h4>
+                            <h4 class="font-bold text-white mb-1">
+                                {{ $t("contact.address") }}
+                            </h4>
                             <p>Av. Gabriel Alomar, 37, Entlo. C</p>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
                                 target="_blank"
                                 class="text-lg font-medium hover:text-[#c2a878] transition-colors"
                             >
-                                +595 982 580 075
+                                +595 983 350 535
                             </a>
                         </div>
                     </div>
@@ -70,14 +70,14 @@
                         <label
                             for="nombre"
                             class="text-sm font-semibold text-gray-300"
-                            >Nombre completo</label
+                            >{{ $t("contact.name") }}</label
                         >
                         <InputText
                             id="nombre"
                             v-model="form.nombre"
                             required
                             class="w-full bg-gray-800 border-gray-700 text-white p-3 rounded-md focus:border-[#c2a878] outline-none"
-                            placeholder="Tu nombre"
+                            :placeholder="$t('contact.name_ph')"
                         />
                     </div>
 
@@ -85,7 +85,7 @@
                         <label
                             for="email"
                             class="text-sm font-semibold text-gray-300"
-                            >Correo electrónico</label
+                            >{{ $t("contact.email") }}</label
                         >
                         <InputText
                             id="email"
@@ -93,7 +93,7 @@
                             type="email"
                             required
                             class="w-full bg-gray-800 border-gray-700 text-white p-3 rounded-md focus:border-[#c2a878] outline-none"
-                            placeholder="tu@email.com"
+                            :placeholder="$t('contact.email_ph')"
                         />
                     </div>
 
@@ -101,7 +101,7 @@
                         <label
                             for="mensaje"
                             class="text-sm font-semibold text-gray-300"
-                            >Mensaje o consulta</label
+                            >{{ $t("contact.msg") }}</label
                         >
                         <Textarea
                             id="mensaje"
@@ -109,14 +109,16 @@
                             required
                             class="w-full bg-gray-800 border-gray-700 text-white p-3 rounded-md focus:border-[#c2a878] outline-none"
                             rows="4"
-                            placeholder="¿En qué podemos ayudarte?"
+                            :placeholder="$t('contact.msg_ph')"
                         />
                     </div>
 
                     <Button
                         type="submit"
                         :label="
-                            form.processing ? 'ENVIANDO...' : 'ENVIAR CONSULTA'
+                            form.processing
+                                ? $t('contact.btn_sending')
+                                : $t('contact.btn_send')
                         "
                         :disabled="form.processing"
                         class="w-full bg-[#c2a878] border-none hover:bg-[#a89060] font-bold py-3 text-white rounded-md mt-4 transition-colors"
@@ -129,9 +131,12 @@
 
 <script setup>
 import { useForm } from "@inertiajs/vue3";
+import { useI18n } from "vue-i18n";
 import InputText from "primevue/inputtext";
 import Textarea from "primevue/textarea";
 import Button from "primevue/button";
+
+const { t } = useI18n(); // Importamos la función de traducción para usarla en los alerts
 
 const form = useForm({
     nombre: "",
@@ -144,10 +149,10 @@ const enviarFormulario = () => {
         preserveScroll: true,
         onSuccess: () => {
             form.reset();
-            alert("¡Gracias! Hemos recibido tu mensaje.");
+            alert(t("contact.alert_success"));
         },
         onError: () => {
-            alert("Hubo un error al enviar el mensaje.");
+            alert(t("contact.alert_error"));
         },
     });
 };

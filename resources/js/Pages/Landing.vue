@@ -1,5 +1,5 @@
 <template>
-    <Head title="DH Abogados - Asesoría Legal y Fiscal en Paraguay" />
+    <Head title="Paraguay Investing - Asesoría Legal y Fiscal en Paraguay" />
 
     <LandingLayout>
         <HeroSection />

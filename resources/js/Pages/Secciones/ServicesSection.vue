@@ -4,17 +4,15 @@
             <div class="text-center mb-16 md:mb-20">
                 <span
                     class="text-[#c2a878] font-bold tracking-widest uppercase text-xs md:text-sm"
-                    >Áreas de Práctica</span
+                    >{{ $t("services.badge") }}</span
                 >
                 <h2
                     class="text-3xl md:text-4xl lg:text-5xl font-bold mt-4 mb-6 leading-tight"
                 >
-                    Asistencia integral a inversores
+                    {{ $t("services.title") }}
                 </h2>
                 <p class="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">
-                    Acompañamiento integral con presencia en Paraguay para
-                    gestionar trámites presencialmente y resolver gestiones con
-                    rapidez y eficacia.
+                    {{ $t("services.desc") }}
                 </p>
             </div>
 
@@ -28,17 +26,15 @@
                         >
                             <i
                                 class="pi pi-compass text-[#c2a878] text-2xl mr-3"
-                            ></i>
-                            Planificación fiscal
+                            ></i
+                            >{{ $t("services.s1_title") }}
                         </div>
                     </template>
-                    <template #content>
-                        <p class="text-gray-400 text-sm leading-relaxed">
-                            Diseñamos la estructura fiscal más eficiente para
-                            proteger el patrimonio y optimizar la tributación
-                            internacional antes de invertir en Paraguay.
-                        </p>
-                    </template>
+                    <template #content
+                        ><p class="text-gray-400 text-sm leading-relaxed">
+                            {{ $t("services.s1_desc") }}
+                        </p></template
+                    >
                 </Card>
 
                 <Card
@@ -50,18 +46,15 @@
                         >
                             <i
                                 class="pi pi-id-card text-[#c2a878] text-2xl mr-3"
-                            ></i>
-                            Cambio de residencia
+                            ></i
+                            >{{ $t("services.s2_title") }}
                         </div>
                     </template>
-                    <template #content>
-                        <p class="text-gray-400 text-sm leading-relaxed">
-                            Gestionamos íntegramente el proceso de traslado,
-                            tramitando obligaciones en el país de origen y
-                            acompañando en la obtención de residencia en
-                            destino.
-                        </p>
-                    </template>
+                    <template #content
+                        ><p class="text-gray-400 text-sm leading-relaxed">
+                            {{ $t("services.s2_desc") }}
+                        </p></template
+                    >
                 </Card>
 
                 <Card
@@ -73,17 +66,15 @@
                         >
                             <i
                                 class="pi pi-building text-[#c2a878] text-2xl mr-3"
-                            ></i>
-                            Constitución de sociedades
+                            ></i
+                            >{{ $t("services.s3_title") }}
                         </div>
                     </template>
-                    <template #content>
-                        <p class="text-gray-400 text-sm leading-relaxed">
-                            Creamos tu empresa de forma legal, ocupándonos de la
-                            redacción de estatutos, inscripción registral y
-                            obtención del RUC para operar con validez.
-                        </p>
-                    </template>
+                    <template #content
+                        ><p class="text-gray-400 text-sm leading-relaxed">
+                            {{ $t("services.s3_desc") }}
+                        </p></template
+                    >
                 </Card>
 
                 <Card
@@ -95,17 +86,15 @@
                         >
                             <i
                                 class="pi pi-home text-[#c2a878] text-2xl mr-3"
-                            ></i>
-                            Compraventa de propiedades
+                            ></i
+                            >{{ $t("services.s4_title") }}
                         </div>
                     </template>
-                    <template #content>
-                        <p class="text-gray-400 text-sm leading-relaxed">
-                            Asesoramos en la adquisición de inmuebles mediante
-                            due diligence completa, revisión de contratos y
-                            coordinación del cierre ante escribano público.
-                        </p>
-                    </template>
+                    <template #content
+                        ><p class="text-gray-400 text-sm leading-relaxed">
+                            {{ $t("services.s4_desc") }}
+                        </p></template
+                    >
                 </Card>
 
                 <Card
@@ -117,17 +106,15 @@
                         >
                             <i
                                 class="pi pi-chart-line text-[#c2a878] text-2xl mr-3"
-                            ></i>
-                            Proyectos de inversión
+                            ></i
+                            >{{ $t("services.s5_title") }}
                         </div>
                     </template>
-                    <template #content>
-                        <p class="text-gray-400 text-sm leading-relaxed">
-                            Asesoramos definiendo la estructura jurídica y
-                            fiscal adecuada y gestionando la documentación para
-                            proyectos de inversión propios o de terceros.
-                        </p>
-                    </template>
+                    <template #content
+                        ><p class="text-gray-400 text-sm leading-relaxed">
+                            {{ $t("services.s5_desc") }}
+                        </p></template
+                    >
                 </Card>
 
                 <Card
@@ -139,18 +126,15 @@
                         >
                             <i
                                 class="pi pi-briefcase text-[#c2a878] text-2xl mr-3"
-                            ></i>
-                            Fiscalidad empresarial
+                            ></i
+                            >{{ $t("services.s6_title") }}
                         </div>
                     </template>
-                    <template #content>
-                        <p class="text-gray-400 text-sm leading-relaxed">
-                            Analizamos cada estructura para asegurar el
-                            cumplimiento y optimizar tributos, aprovechando un
-                            sistema donde el impuesto a la renta y el IVA rondan
-                            el 10%.
-                        </p>
-                    </template>
+                    <template #content
+                        ><p class="text-gray-400 text-sm leading-relaxed">
+                            {{ $t("services.s6_desc") }}
+                        </p></template
+                    >
                 </Card>
             </div>
         </div>

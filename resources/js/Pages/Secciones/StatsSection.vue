@@ -10,7 +10,7 @@
                 <div
                     class="text-[10px] md:text-xs font-bold uppercase tracking-widest opacity-90"
                 >
-                    Clientes Felices
+                    {{ $t("stats.clients") }}
                 </div>
             </div>
             <div>
@@ -18,7 +18,7 @@
                 <div
                     class="text-[10px] md:text-xs font-bold uppercase tracking-widest opacity-90"
                 >
-                    Proyectos
+                    {{ $t("stats.projects") }}
                 </div>
             </div>
             <div>
@@ -26,7 +26,7 @@
                 <div
                     class="text-[10px] md:text-xs font-bold uppercase tracking-widest opacity-90"
                 >
-                    Años Experiencia
+                    {{ $t("stats.experience") }}
                 </div>
             </div>
             <div>
@@ -34,7 +34,7 @@
                 <div
                     class="text-[10px] md:text-xs font-bold uppercase tracking-widest opacity-90"
                 >
-                    Asesoramientos
+                    {{ $t("stats.advice") }}
                 </div>
             </div>
         </div>

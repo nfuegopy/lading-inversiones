@@ -9,11 +9,10 @@
                 >
                     <img
                         src="/images/luis-del-hoyo.png"
-                        alt="Luis del Hoyo - DH Abogados"
+                        alt="Luis del Hoyo - Paraguay Investing"
                         class="w-auto h-[90%] object-contain object-bottom"
                     />
                 </div>
-
                 <div
                     class="absolute -bottom-6 -right-2 md:-bottom-8 md:-right-8 bg-white p-4 md:p-6 shadow-2xl rounded-xl w-[90%] md:max-w-xs border-t-4 border-[#c2a878] z-20"
                 >
@@ -25,7 +24,7 @@
                     <p
                         class="text-[#c2a878] text-xs md:text-sm font-bold mb-3 md:mb-4 mt-1"
                     >
-                        Abogado Director
+                        {{ $t("about.role") }}
                     </p>
                     <ul
                         class="text-[11px] md:text-xs text-gray-600 space-y-2 md:space-y-3"
@@ -33,20 +32,20 @@
                         <li class="flex items-center">
                             <i
                                 class="pi pi-graduation-cap text-[#c2a878] mr-2 text-sm md:text-base"
-                            ></i>
-                            Licenciado en Derecho (UCM)
+                            ></i
+                            >{{ $t("about.degree") }}
                         </li>
                         <li class="flex items-center">
                             <i
                                 class="pi pi-briefcase text-[#c2a878] mr-2 text-sm md:text-base"
-                            ></i>
-                            +15 años en PwC
+                            ></i
+                            >{{ $t("about.exp") }}
                         </li>
                         <li class="flex items-center">
                             <i
                                 class="pi pi-language text-[#c2a878] mr-2 text-sm md:text-base"
-                            ></i>
-                            Español, Inglés, Catalán
+                            ></i
+                            >{{ $t("about.langs") }}
                         </li>
                     </ul>
                 </div>
@@ -55,44 +54,29 @@
             <div class="order-1 lg:order-2 lg:pl-8">
                 <span
                     class="text-[#c2a878] font-bold tracking-widest uppercase text-xs md:text-sm"
-                    >Nuestra Firma</span
+                    >{{ $t("about.badge") }}</span
                 >
                 <h2
                     class="text-3xl md:text-4xl font-bold mt-2 md:mt-3 mb-5 md:mb-6 text-gray-900 leading-tight"
                 >
-                    Expertos en inversión y fiscalidad internacional
+                    {{ $t("about.title") }}
                 </h2>
 
                 <div
                     class="space-y-4 text-gray-600 leading-relaxed text-sm md:text-base"
                 >
                     <p class="text-base md:text-lg text-gray-800 font-medium">
-                        Somos un despacho internacional de abogados, consultores
-                        y asesores fiscales dirigido por Luis del Hoyo Pérez de
-                        Rada, abogado español especializado en Derecho
-                        societario, inmobiliario y planificación fiscal
-                        internacional.
+                        {{ $t("about.p1") }}
                     </p>
-                    <p>
-                        Nuestra misión es ayudarte a estructurar correctamente
-                        tu proyecto desde el inicio, optimizando las
-                        consecuencias tributarias tanto en el país de origen
-                        como en el de destino.
-                    </p>
-                    <p>
-                        Conocemos en profundidad el entorno jurídico, fiscal y
-                        operativo del país. Trabajamos con equipo propio y
-                        colaboradores locales para garantizar que cada paso se
-                        ejecute con la máxima seguridad jurídica y minimizando
-                        riesgos.
-                    </p>
+                    <p>{{ $t("about.p2") }}</p>
+                    <p>{{ $t("about.p3") }}</p>
                 </div>
 
                 <a
                     href="#servicios"
                     class="inline-flex items-center text-gray-900 font-bold hover:text-[#c2a878] transition-colors border-b-2 border-[#c2a878] pb-1 mt-8 text-sm md:text-base"
                 >
-                    Conoce nuestros servicios
+                    {{ $t("about.link") }}
                     <i class="pi pi-arrow-right ml-2 text-xs md:text-sm"></i>
                 </a>
             </div>

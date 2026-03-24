@@ -10,6 +10,9 @@ import { ZiggyVue } from "../../vendor/tightenco/ziggy";
 import PrimeVue from "primevue/config";
 import Aura from "@primevue/themes/aura";
 
+// IMPORTAR i18n <-- NUEVO
+import { i18n } from "./i18n";
+
 const appName = import.meta.env.VITE_APP_NAME || "Laravel";
 
 createInertiaApp({
@@ -20,25 +23,23 @@ createInertiaApp({
             import.meta.glob("./Pages/**/*.vue"),
         ),
     setup({ el, App, props, plugin }) {
-        return (
-            createApp({ render: () => h(App, props) })
-                .use(plugin)
-                .use(ZiggyVue)
-                // Configuración de PrimeVue con el tema Aura
-                .use(PrimeVue, {
-                    theme: {
-                        preset: Aura,
-                        options: {
-                            darkModeSelector: ".dark", // Para que respete el modo oscuro de Tailwind si lo usamos
-                            cssLayer: {
-                                name: "primevue",
-                                order: "tailwind-base, primevue, tailwind-utilities",
-                            },
+        return createApp({ render: () => h(App, props) })
+            .use(plugin)
+            .use(ZiggyVue)
+            .use(i18n) // USAR i18n <-- NUEVO
+            .use(PrimeVue, {
+                theme: {
+                    preset: Aura,
+                    options: {
+                        darkModeSelector: ".dark",
+                        cssLayer: {
+                            name: "primevue",
+                            order: "tailwind-base, primevue, tailwind-utilities",
                         },
                     },
-                })
-                .mount(el)
-        );
+                },
+            })
+            .mount(el);
     },
     progress: {
         color: "#4B5563",
