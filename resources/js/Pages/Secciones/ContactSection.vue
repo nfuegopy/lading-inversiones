@@ -36,10 +36,10 @@
                         <div>
                             <h4 class="font-bold text-white mb-1">Email</h4>
                             <a
-                                href="mailto:admin@acbldeveloper.com"
+                                href="mailto:comercial@paraguayinvesting.com"
                                 class="hover:text-[#c2a878] transition-colors"
                             >
-                                admin@acbldeveloper.com
+                                comercial@paraguayinvesting.com
                             </a>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
                         <div>
                             <h4 class="font-bold text-white mb-1">WhatsApp</h4>
                             <a
-                                href="https://wa.me/595982580075?text=Hola,%20me%20gustaría%20realizar%20una%20consulta."
+                                href="https://wa.me/595983350535?text=Hola,%20me%20gustaría%20realizar%20una%20consulta."
                                 target="_blank"
                                 class="text-lg font-medium hover:text-[#c2a878] transition-colors"
                             >
