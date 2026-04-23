@@ -25,7 +25,11 @@
                             <h4 class="font-bold text-white mb-1">
                                 {{ $t("contact.address") }}
                             </h4>
-                            <p>Av. Gabriel Alomar, 37, Entlo. C</p>
+                            <p>España: Av. Gabriel Alomar, 37, Entlo. C</p>
+                            <p>
+                                Paraguay: Edificio Clusters Center, Aviadores
+                                del Chaco, 2875
+                            </p>
                         </div>
                     </div>
 

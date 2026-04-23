@@ -29,25 +29,40 @@
                     <ul
                         class="text-[11px] md:text-xs text-gray-600 space-y-2 md:space-y-3"
                     >
-                        <li class="flex items-center">
+                        <li class="flex items-start">
                             <i
-                                class="pi pi-graduation-cap text-[#c2a878] mr-2 text-sm md:text-base"
-                            ></i
-                            >{{ $t("about.degree") }}
+                                class="pi pi-graduation-cap text-[#c2a878] mr-2 text-sm md:text-base mt-0.5"
+                            ></i>
+                            <span class="leading-tight">{{
+                                $t("about.degree")
+                            }}</span>
                         </li>
                         <li class="flex items-center">
                             <i
                                 class="pi pi-briefcase text-[#c2a878] mr-2 text-sm md:text-base"
-                            ></i
-                            >{{ $t("about.exp") }}
+                            ></i>
+                            {{ $t("about.exp") }}
                         </li>
                         <li class="flex items-center">
                             <i
                                 class="pi pi-language text-[#c2a878] mr-2 text-sm md:text-base"
-                            ></i
-                            >{{ $t("about.langs") }}
+                            ></i>
+                            {{ $t("about.langs") }}
                         </li>
                     </ul>
+
+                    <div class="mt-4 pt-3 border-t border-gray-100">
+                        <a
+                            href="/downloads/CV_Luis_del_Hoyo.pdf"
+                            download="CV_Luis_del_Hoyo.pdf"
+                            class="inline-flex items-center text-xs md:text-sm font-bold text-[#c2a878] hover:text-[#a89060] transition-colors group"
+                        >
+                            <i
+                                class="pi pi-download mr-2 group-hover:scale-110 transition-transform"
+                            ></i>
+                            {{ $t("about.view_cv") }}
+                        </a>
+                    </div>
                 </div>
             </div>
 
